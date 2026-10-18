@@ -130,7 +130,6 @@ int main() {
         dim3(32, 32, 1)
     };
 
-    int R = 2;
     for (auto block_size : block_sizes) {
 
         dim3 grid_size(
