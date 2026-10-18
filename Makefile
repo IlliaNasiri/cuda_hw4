@@ -1,6 +1,6 @@
 
 #TARGETS := q1 q2 q3
-TARGETS := q1 q2 q3 q4 q5
+TARGETS := q1 q2 q3 q4
 
 all: $(TARGETS)
 
@@ -15,9 +15,6 @@ q3: hw3-v3.cpp utils.h
 
 q4: hw3-v4.cpp utils.h
 	nvcc -arch=native -x cu hw3-v4.cpp -o $@
-
-q5: hw3-v5.cpp utils.h
-	nvcc -arch=native -x cu hw3-v5.cpp -o $@
 
 clean:
 	rm -f $(TARGETS)
